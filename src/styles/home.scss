@@ -1,0 +1,71 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    .created-category{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        >textarea{
+            padding: 0.5rem;
+            resize: none;
+            
+            outline: none;
+        }
+        >input{
+            
+            outline: 1px solid  black;
+            border: none;
+            border-radius: 0.25rem;
+        }
+        >button{
+           border: none;
+           padding: 0.5rem;
+           &:hover{
+               cursor: pointer;
+           }
+        }
+        >ul{
+
+            &::-webkit-scrollbar {
+                height: 7px;
+               
+              }
+              
+              &::-webkit-scrollbar-track {
+                background: none;
+               
+              }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #909090;
+                border-radius: 20px;
+              }
+              
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: scroll;
+            flex-direction: column;
+
+            >div{ 
+               width: 100%;
+                padding: 1rem;
+                max-width: 250px;
+                gap: 1rem;
+                margin:1rem;
+                
+                background: #f1f1f1;
+                color: rgb(51, 51, 51);
+                >p{
+                    width: 100px;
+                }
+            }
+        }
+    }
+  
+}
